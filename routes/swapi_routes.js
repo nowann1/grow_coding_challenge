@@ -6,10 +6,11 @@ const router = express.Router();
 
 router.get("/people:sortBy?", async (req, res) => {
   let sortBy = req.query.sortBy || "";
-
   let response = await getDataFromSWAPI("people");
-  // if (sortBy == "name" || sortBy == "height" || sortBy == "") {
-  // }
+
+  if (sortBy == "name" || sortBy == "height" || sortBy == "mass") {
+    response.sort((a, b) => a[sortBy].localeCompare(b[sortBy], undefined, { numeric: true }))
+  }
   res.send("Hello World! " + JSON.stringify(response)).status(200);
 });
 
@@ -20,7 +21,26 @@ router.get("/planets", async (req, res) => {
 
 module.exports = router;
 
-let sortArray = (reqData) => {};
+//Another solution
+// response.sort(function(a,b){
+//   var a1=typeof a[sortBy], b1=typeof b[sortBy];
+//   return a1<b1 ? -1 : a1>b1 ? 1 : a[sortBy]<b[sortBy] ? -1 : a[sortBy]>b[sortBy] ? 1 : 0;
+// });
+
+// let promises = [];
+
+// for (let i = 0; i < requests.length; i++) {
+//     promises.push(axios.get(request[i].url, { params: {...} }));
+// }
+
+// axios.all(promises)
+//     .then(axios.spread((...args) => {
+//         for (let i = 0; i < args.length; i++) {
+//             myObject[args[i].config.params.saveLocation] = args[i].data;
+//         }
+//     }))
+//     .then(/* use the data */);
+
 
 const getDataFromSWAPI = async (pathURL) => {
   let results = [];
