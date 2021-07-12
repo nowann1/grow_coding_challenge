@@ -49,7 +49,7 @@ http://localhost:5000/people?sortBy=mass
 
 ----
 ## Other notes 📋 ✏️
-- I've used localeCompare instead of Collator because after several tests i found out that the former was a little bit faster, althought strangely enough,it should be the other way around, in theory at least.
+- I've used localeCompare instead of Collator because after several tests i found out that the former was a little bit faster, althought strangely enough, it should be the other way around, in theory at least.
 <br></br>
 ## Response time :clock4:
 - The average get response time (after 10 tests) is:
@@ -62,4 +62,4 @@ I don't know if that's too much time, as i said before, i've tried to make it th
 
 ## About me :smile:
 
-Hi! My name is Nahuel, and i'm from Argentina, i'm 22 years old, and i love programming :computer: , making music :musical_keyboard:, coffee ☕, and cats! :cat:
+Hi! 🙋🏻‍♂️ My name is Nahuel, and i'm from Argentina , i'm 22 years old, and i love programming :computer: , making music :musical_keyboard:, coffee ☕, and cats! :cat:
