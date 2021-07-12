@@ -45,11 +45,11 @@ http://localhost:5000/people?sortBy=mass
 | **getNameFromResidentsURL**      | Returns an **array of objects** of planets with each residents' names instead of the urls | **Array** |
 | **replaceResidents** | Replaces all of the residents's urls with its names | **Void** |
 
-> **Note:** There is a bug that i couldn't figure out how to solve, for some reason **sort()** (higher order function) takes **Jabba's mass** (1,358 kg) **as a decimal**, making it the object with the least mass, althought it should be the one with the most.
+> **Note:** There is a bug that i couldn't figure out how to solve, for some reason **sort()** (higher order function) takes **Jabba's mass** (1,358 kg) **as a decimal**, making it the object with the  **least mass**, althought it should be the one with  **the most**.
 
 ----
 ## Other notes 📋 ✏️
-- I've used localeCompare instead of Collator because after several tests i found out that the former was a little bit faster, althought strangely enough, it should be the other way around.
+- I've used localeCompare instead of Collator because after several tests i found out that the former was a little bit faster, althought strangely enough, in theory it should be the other way around.
 <br></br>
 ## Response time :clock4:
 - The average get response time (after 10 tests) is:
