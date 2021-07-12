@@ -33,16 +33,21 @@ const getNameFromResidentsURL = async (results) => {
     }
   }
 
-  await axios.all(promises).then(
-    axios.spread((...args) => {
-      for (let i = 0; i < args.length; i++) {
-        residentsArray.push({
-          url: args[i].data.url,
-          name: args[i].data.name,
-        });
-      }
-    })
-  );
+  try {
+    await axios.all(promises).then(
+      axios.spread((...args) => {
+        for (let i = 0; i < args.length; i++) {
+          residentsArray.push({
+            url: args[i].data.url,
+            name: args[i].data.name,
+          });
+        }
+      })
+    );
+  } catch (error) {
+    console.log("ERROR: " + error);
+  }
+
   const respuestaResidentes = replaceResidents(results, residentsArray);
   return results;
 };
