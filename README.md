@@ -62,4 +62,4 @@ I don't really know if that's slow or not, but as i said before, i've tried to m
 
 ## About me :smile:
 
-Hi! 🙋🏻‍♂️ My name is Nahuel, and i'm from Argentina , i'm 22 years old, and i love programming :computer: , making music :musical_keyboard:, coffee ☕, and cats! :cat:
+Hi! 🙋🏻‍♂️ My name is Nahuel (it is pronounced Nah-well, strange name, i know), and i'm from Argentina , i'm 22 years old, and i love programming :computer: , making music :musical_keyboard:, coffee ☕, and cats! :cat:
