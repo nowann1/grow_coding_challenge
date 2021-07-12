@@ -1,5 +1,5 @@
 # grow_coding_challenge
-<p align="center"><img src="https://assets-global.website-files.com/5bc779c7cb6515eacd17ad0f/5be50e5b71001a0d801683ae_grow-logo-dark.svg"/></p>
+<p align="center"><img src="https://www.clicdata.com/wp-content/uploads/2018/12/clicdata-compared-grow-business-intelligence-dashboard-softwares.png"/></p>
 <h1 align="center"> 🌱📈🌳 Grow Code Challenge 🌱📈🌳 </h1>
 
  
@@ -10,9 +10,9 @@
 
 ## Before we start 
  
- - Be sure to have Node up to date (I've used Node v15.9.0 for this project) 
+ - Be sure to have Node up to date (I've used Node v16.4.2 for this project) 
  - Use ```npm install``` to install all dependencies.
- - Use ```node server.js``` to start the server. Or ```npm run watch``` to start the server with Nodemon in dev mode.
+ - Use ```node server.js``` to start the server. Or ```npm run watch``` to start the server with Nodemon, in dev mode.
 <br></br>
 
 ## Goals
@@ -41,15 +41,15 @@ http://localhost:5000/people?sortBy=mass
   
   | Name | Description | Return |
 | :------------ |:---------------:| :-----:|
-| **getDataFromSWAPI** | Returns an **array of objects** with data from *people's* or *planets'* endpoints | **Array** |
-| **getNameFromResidentsURL**      | Returns an **array of objects** of planets with each residents' names instead of the urls | **Array** |
-| **replaceResidents** | Replaces all of the residents's urls with its names | **Void** |
+| **getDataFromSWAPI** | Returns an **array of objects** with data from */people* or */planets* endpoints | **Array** |
+| **getNameFromResidentsURL**      | Returns an **array of objects** of planets with each residents' name instead of the urls | **Array** |
+| **replaceResidents** | Replaces all of the residents' urls with its names | **Void** |
 
-> **Note:** There is a bug that i couldn't figure out how to solve, for some reason **sort()** (higher order function) takes **Jabba's mass** (1,358 kg) **as a decimal**, making it the object with the  **least mass**, althought it should be the one with  **the most**.
+> **Note:** There is a bug that i couldn't figure out how to solve, for some reason **sort()** (the higher order function) takes **Jabba's mass value** (1,358 kg) **as a decimal**, making it the object with the  **least mass**, althought it should be the one with  **the most**. And I didn't wanted to change the value per se, thus changing the original response when not asked.
 
 ----
 ## Other notes 📋 ✏️
-- I've used localeCompare instead of Collator because after several tests i found out that the former was a little bit faster, althought strangely enough, in theory it should be the other way around.
+- I've used localeCompare instead of Collator because after several tests i found out that the former was a little bit faster, althought strangely enough, it should be the other way around, in theory at least.
 <br></br>
 ## Response time :clock4:
 - The average get response time (after 10 tests) is:
@@ -62,4 +62,4 @@ I don't know if that's too much time, as i said before, i've tried to make it th
 
 ## About me :smile:
 
-Hi! My name is Nahuel, and i'm from Argentina, i'm 22 years old, and i love programming :computer: , making music :musical_keyboard:, coffee ☕, and cats! :cat:
+Hi! 🙋🏻‍♂️ My name is Nahuel, and i'm from Argentina , i'm 22 years old, and i love programming :computer: , making music :musical_keyboard:, coffee ☕, and cats! :cat:
