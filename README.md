@@ -45,7 +45,7 @@ http://localhost:5000/people?sortBy=mass
 | **getNameFromResidentsURL**      | Returns an **array of objects** of planets with each residents' name instead of the urls | **Array** |
 | **replaceResidents** | Replaces all of the residents' urls with its names | **Void** |
 
-> **Note:** There is a bug that i couldn't figure out how to solve, for some reason **sort()** (higher order function) takes **Jabba's mass** (1,358 kg) **as a decimal**, making it the object with the  **least mass**, althought it should be the one with  **the most**.
+> **Note:** There is a bug that i couldn't figure out how to solve, for some reason **sort()** (the higher order function) takes **Jabba's mass value** (1,358 kg) **as a decimal**, making it the object with the  **least mass**, althought it should be the one with  **the most**. And I didn't wanted to change the value per se, thus changing the original response when not asked.
 
 ----
 ## Other notes 📋 ✏️
