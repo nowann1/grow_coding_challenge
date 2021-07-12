@@ -57,7 +57,7 @@ http://localhost:5000/people?sortBy=mass
 /planets | 8844.366 ms
 /people  | 9185.685 ms
 ```
-I don't know if that's too much time, as i said before, i've tried to make it the most reusable that i could.
+I don't really know if that's slow or not, but as i said before, i've tried to make it the most reusable that i could.
 
 
 ## About me :smile:
