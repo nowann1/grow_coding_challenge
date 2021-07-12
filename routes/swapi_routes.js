@@ -17,7 +17,6 @@ router.get("/people:sortBy?", async (req, res) => {
 
 router.get("/planets", async (req, res) => {
   let dataFromSwapi = await util.getDataFromSWAPI("planets");
-  console.log(JSON.stringify(dataFromSwapi));
   let response = await util.getNameFromResidentsURL(dataFromSwapi);
   res.send(JSON.stringify(response)).status(200);
 });
