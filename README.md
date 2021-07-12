@@ -1,5 +1,5 @@
 # grow_coding_challenge
-<p align="center"><img src="https://assets-global.website-files.com/5bc779c7cb6515eacd17ad0f/5be50e5b71001a0d801683ae_grow-logo-dark.svg"/></p>
+<p align="center"><img src="https://www.clicdata.com/wp-content/uploads/2018/12/clicdata-compared-grow-business-intelligence-dashboard-softwares.png"/></p>
 <h1 align="center"> 🌱📈🌳 Grow Code Challenge 🌱📈🌳 </h1>
 
  
