@@ -25,7 +25,7 @@ const getDataFromSWAPI = async (pathURL) => {
 
 const getNameFromResidentsURL = async (results) => {
   let promises = [];
-  var residentsArray = [];
+  let residentsArray = [];
 
   for (let i = 0; i < results.length; i++) {
     for (let j = 0; j < results[i].residents.length; j++) {
@@ -48,7 +48,7 @@ const getNameFromResidentsURL = async (results) => {
     console.log("ERROR: " + error);
   }
 
-  const respuestaResidentes = replaceResidents(results, residentsArray);
+  replaceResidents(results, residentsArray);
   return results;
 };
 
